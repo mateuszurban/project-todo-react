@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0f0;
+  color: #bf6969;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
