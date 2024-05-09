@@ -2,6 +2,10 @@
 
 Task-management goal-oriented app, with intended use of setting daily goals. Created with Tailwind CSS and React.
 
+## Demo
+
+[Daily - check out demo](https://mateuszurban.github.io/project-todo-react/)
+
 ## Installation
 
 Starting the development server:
