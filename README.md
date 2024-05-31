@@ -1,6 +1,6 @@
 # Daily
 
-Task-management goal-oriented app, with intended use of setting daily goals. Created with Tailwind CSS and React.
+Task-management goal-oriented app, with intended use of setting daily goals. Created with Tailwind CSS and React and TypeScript.
 
 ## Demo
 

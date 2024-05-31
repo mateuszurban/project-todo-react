@@ -1,12 +1,20 @@
 import { Square, CheckSquare, Edit, Trash2 } from "react-feather";
 
+interface TaskInterface {
+  name: string;
+  finished: boolean;
+  handleTaskDelete: () => void;
+  handleTaskFinish: () => void;
+  handleTaskEdit: () => void;
+}
+
 export function Task({
   name,
   finished,
   handleTaskDelete,
   handleTaskFinish,
   handleTaskEdit,
-}) {
+}: TaskInterface) {
   return (
     <li className="pt-2 flex flex-row">
       {finished ? (

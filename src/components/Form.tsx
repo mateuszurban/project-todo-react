@@ -1,15 +1,30 @@
-export function Form({ handleFormSubmit, inputValue, setInputValue }) {
+interface FormInterface {
+  handleFormSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  inputValue: string;
+  setInputValue: (inputValue: string) => void;
+}
+
+export function Form({
+  handleFormSubmit,
+  inputValue,
+  setInputValue,
+}: FormInterface) {
   return (
     <>
       <form
-        onSubmit={handleFormSubmit}
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleFormSubmit(e);
+        }}
         className="flex flex-col items-center mt-8 border-solid border-2 border-current rounded-lg p-4"
       >
         <h2>Add new task:</h2>
         <input
           autoFocus={true}
           value={inputValue}
-          onChange={(event) => setInputValue(event.target.value)}
+          onChange={(event) =>
+            setInputValue((event.target as HTMLInputElement).value)
+          }
           type="text"
           className="mt-2 w-2/3 "
         />
